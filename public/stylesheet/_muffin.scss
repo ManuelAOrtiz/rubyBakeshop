@@ -1,0 +1,57 @@
+#muffinWrapper{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 10%;
+	margin-top: 3%;
+}
+.muffinImage{
+	height: 200px;
+}
+.topMuffinWrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10%;
+	margin:0 auto;
+	width: 70%;
+	height: 100%;
+	text-align: center;
+}
+#chocolateChipMuffin{
+	background-image: url("../images/chocolate-chip-muffins-square.jpg");
+	background-size: 100% 100%;
+}
+#banana{
+	background-image: url("../images/oatmeal-with-bananas.jpg");
+	background-size: 100% 100%;
+}
+#corn{
+	background-image: url("../images/Corn-Bread-Muffins.jpg");
+	background-size: 100% 100%;
+}
+.muffin{
+	display: grid;
+	grid-template-rows: 1fr .2fr;
+}
+.bottomMuffinWrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20%;
+	margin:0 auto;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+#blueberryMuffin{
+	background-image: url("../images/Blueberry-Muffins.jpg");
+	background-size: 100% 100%;
+}
+#cinnamonMuffin{
+	background-image: url("../images/Cinnamon-Roll-Muffins.jpg");
+	background-size: 100% 100%;
+}
+#muffinForm{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5%;
+}

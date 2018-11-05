@@ -1,0 +1,51 @@
+<div id="muffinWrapper">
+	<div class="topMuffinWrapper">
+
+		<div class="muffin">
+			<div id="chocolateChipMuffin" class="muffinImage"></div>
+			<div class="muffinText">Chocolate Chip Muffin</div>
+		</div>
+
+		<div class="muffin">
+			<div id="banana" class="muffinImage"></div>
+			<div class="muffinText">Banana Nut Muffin</div>
+		</div>
+
+		<div class="muffin">
+			<div id="corn" class="muffinImage"></div>
+			<div class="muffinText">Corn Muffin</div>
+		</div>
+	</div>
+
+	<div class="bottomMuffinWrapper">
+		<div class="muffin">
+			<div id="blueberryMuffin" class="muffinImage"></div>
+			<div class="muffinText"> Blueberry Muffin</div>
+		</div>
+
+		<div class="muffin">
+			<div id="cinnamonMuffin" class="muffinImage"></div>
+			<div class="muffinText">Cinnamon Roll Muffin</div>
+		</div>
+	</div>
+
+</div>
+
+<form id="muffinForm" method="get" action="/makeMuffin">
+	<select name="type">
+		<option value="Chocolate Chip">Chocolate Chip Muffin</option>
+		<option value="Banana Nut">Banana Nut Muffin</option>
+		<option value="Corn Muffin">Corn Muffin</option>
+		<option value="Blueberry">Blueberry Muffin</option>
+		<option value="Cinnamon Roll">Cinnamon Roll Muffin</option>
+	</select>
+
+	<select name="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	<input type="submit" name="">
+</form>

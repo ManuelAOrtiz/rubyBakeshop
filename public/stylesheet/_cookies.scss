@@ -1,0 +1,47 @@
+#cookieWrapper{
+	width:70%;
+	margin:0 auto;
+	margin-top: 3%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 5%;
+	grid-column-gap: 5%;
+	text-align: center;
+}
+.cookie{
+	width: 100%;
+	height: 200px;
+	display: grid;
+	grid-template-rows: 1fr .2fr;
+}
+#chocolateChip{
+	background-image: url("../images/chocolateChip.jpg");
+	background-size: 100% 100%;
+}
+#oatmeal{
+	background-image: url("../images/oatmeal-raisinCookie.jpg");
+	background-size: 100% 100%;
+}
+#chocochocoChip{
+	background-image: url("../images/chocoChocochip.jpg");
+	background-size: 100% 100%;
+}
+#sugar{
+	background-image: url("../images/sugarCookies.jpg");
+	background-size: 100% 100%;
+}
+#peanutButter{
+	background-image: url("../images/peanutButter.jpg");
+	background-size: 100% 100%;
+}
+#peanutSandwich{
+	background-image: url("../images/peanut-butter-sandwich-cookies.jpg");
+	background-size: 100% 100%;
+}
+#cookieForm {
+	text-align:center;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5%;
+}

@@ -1,0 +1,43 @@
+#cart{
+	text-align: center;
+	margin-top: 3%;
+}
+#checkoutTitle{
+	width: 40%;
+	margin:0 auto;
+	margin-top: 5%;
+	text-align: center;
+}
+#checkoutForm{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+#contactTitle{
+	text-align: center;
+	margin-top: 10%;
+}
+#contactForm{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	grid-template-columns: 1fr .2fr;
+	position: relative;
+}
+#contactName{
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+#contactEmail{
+	grid-row: 1/2;
+}
+#contactSubmit{
+	grid-row: 2/3;
+	grid-column: 2/3;
+	height: 5vh;
+	width: 7vw;
+	position: absolute;
+	bottom: 2%;
+}

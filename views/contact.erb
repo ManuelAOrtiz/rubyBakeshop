@@ -1,0 +1,43 @@
+
+
+<div id="cart">
+	<h2 id="cartTitle"> In your cart right now you have: </h2>
+	<% if $userRequests.length == 0 %>
+		<h2> "Nothing" </h2>
+	<% else %>
+		<% $userRequests.each do |item| %>
+			<% if item.quantity == 1 %>
+				<h2> <%= "#{item.quantity} #{item.type} #{item.class} for $#{item.price}" %>  </h2>
+			<% else %>
+				<h2> <%= "#{item.quantity} #{item.type} #{item.class}s for $#{item.price} each" %> </h2>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>
+
+<h2 id="checkoutTitle"> Checkout: Enter email and hit submit.</h2>	
+<form  id="checkoutForm" action="https://formspree.io/devolthdd@gmail.com" method="POST">
+	<% sentence = "" %>
+	<% total = 0 %>
+	<% $userRequests.each do |item| %>
+		<% sentence += " #{item.quantity.to_s} #{item.type.to_s} #{item.class}" %>
+		<% total += (item.price * item.quantity)%>
+  	<% end %>
+ 	<input type="email"  name="_replyto" placeholder="Your email">
+  	<input type="hidden" name="content" value= "<%= sentence +" "+ total.to_s%>">
+  	<input type="submit" value="Send" id="cartSubmit">
+</form> 
+
+<h2 id="contactTitle">If you wish to contact us: </h2>
+<form id="contactForm" action="https://formspree.io/devolthdd@gmail.com" method="POST">
+	<input type="email" id="contactEmail" name="_replyto" placeholder="Your Email">
+	<input type="text"  id="contactName" name="name" placeholder="Your message">
+	<input type="submit" id="contactSubmit" value="Send">
+</form> 
+<script type="text/javascript">
+	var cartSubmit = document.getElementById('cartSubmit');
+	cartSubmit.addEventListener("click", function(){
+		setTimeout(<% $userRequests = [] %>, 500)
+	})
+
+</script>

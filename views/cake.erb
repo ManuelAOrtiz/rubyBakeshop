@@ -1,0 +1,41 @@
+<div id="cakeWrapper">
+	<div id="customWrapper">
+		<div id="customDesign" class="cake">
+			<div id="customDesign1" class="cakeImage"></div>
+			<div id="customDesign2" class="cakeImage"></div>
+			<div id="customDesign3" class="cakeImage"></div>
+		</div>
+		<div id="customText" class="cakeText">Get A Custom Cake By Calling (###) ### - ####</div>
+	</div>
+	<div class="cake">
+		<div id="oneLayer" class="cakeImage"></div>
+		<div id="oneLayerText" class="cakeText">One Layer Cake</div>
+	</div>
+	<div class="cake">
+		<div id="twoLayer" class="cakeImage"></div>
+		<div id="twoLayerText" class="cakeText">Two Layer Cake</div>
+	</div>
+
+	<div class="cake">
+		<div id="fullSheet" class="cakeImage"></div>
+		<div id="fullSheetText" class="cakeText">Full Sheet Cake</div>
+	</div>
+
+</div>
+
+<form id="cakeForm" method="get" action="/makeCake">
+	<select name="type">
+		<option value="One Layer">One Layer</option>
+		<option value="Two Layer">Two Layer</option>
+		<option value="Full Sheet">Full sheet</option>
+	</select>
+
+	<select name="quantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+	<input type="submit">
+</form>
